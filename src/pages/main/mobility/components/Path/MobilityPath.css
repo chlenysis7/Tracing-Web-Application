@@ -1,0 +1,8 @@
+.delete-path {
+  position: relative;
+  height: 24px;
+  transform: translate(-28px, -72px);
+  margin-top: -10px;
+  z-index: 100;
+  cursor: pointer;
+}

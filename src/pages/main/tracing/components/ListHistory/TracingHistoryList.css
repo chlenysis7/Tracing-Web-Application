@@ -1,0 +1,29 @@
+.tracing-history-popup {
+  min-width: 30em;
+  width: 70vw;
+}
+
+.tracing-history-popup .content {
+  -webkit-touch-callout: text;
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+.tracing-history-popup .title {
+  cursor: default !important;
+  display: block !important;
+}
+
+.tracing-history-popup [role="tooltip"].popup-content {
+  width: 200px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+}
+
+.tracing-history-popup .popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000 !important;
+}

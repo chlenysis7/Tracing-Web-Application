@@ -1,0 +1,20 @@
+{
+  "projects": {
+    "default": "tracing-mobility"
+  },
+  "targets": {
+    "tracing-mobility": {
+      "hosting": {
+        "dev": [
+          "dev-tracing-mobility"
+        ],
+        "stg": [
+          "stg-tracing-mobility"
+        ],
+        "prod": [
+          "tracing-mobility"
+        ]
+      }
+    }
+  }
+}

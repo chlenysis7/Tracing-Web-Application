@@ -1,0 +1,147 @@
+.mobility-history-popup {
+  min-width: 30em;
+  width: 80vw;
+  min-width: 1000px;
+  max-height: 500px;
+  overflow: scroll;
+}
+
+.mobility-history-popup .title {
+  cursor: default !important;
+  display: block !important;
+  position: absolute;
+  right: 0;
+  left: 0;
+  background: white;
+  z-index: 1;
+}
+
+.mobility-history-popup .content {
+  padding-top: 5em;
+  -webkit-touch-callout: text;
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+.mobility-history-popup [role="tooltip"].popup-content {
+  width: 200px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+}
+
+.mobility-history-popup .popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000 !important;
+}
+
+.mobility-history-item {
+  background-color: white;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0px 8px 24px rgba(176, 190, 197, 0.32),
+    0px 3px 5px rgba(176, 190, 197, 0.32);
+  transition: 100ms ease-in;
+}
+
+.mobility-history-item .id-timestamp {
+  display: flex;
+  justify-content: space-between;
+  color: lightgray;
+  font-size: 0.8rem;
+}
+
+.mobility-history-item .mid {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: 1fr 8.5fr 0.5fr;
+  gap: 0.5em;
+  align-items: center;
+}
+
+.mobility-history-item .mid .path-title-type {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.mobility-history-item .mid .path-title-type img {
+  transition: 100ms ease-in;
+  cursor: pointer;
+  max-height: 95px;
+}
+.mobility-history-item .mid .path-title-type img.disabled {
+  filter: grayscale(1) brightness(2);
+  cursor: default;
+}
+.mobility-history-item .mid .path-title-type img:not(.disabled):hover {
+  filter: brightness(0.8);
+}
+
+.mobility-history-item .mid .path-title-type b {
+  color: var(--color-blue);
+  font-size: 1.2em;
+}
+
+.mobility-history-item .mid .path-title-type span {
+  font-size: 0.8em;
+}
+
+.mobility-history-item .mid .path-routes-times {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+
+.mobility-history-item .mid .path-routes-times .single {
+  display: grid;
+  grid-template-columns: 1fr 4fr 2fr;
+  gap: 1em;
+  align-items: center;
+  line-height: 1.5em;
+}
+
+.mobility-history-item .mid .path-routes-times .single h4 {
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  /* white-space: nowrap; */
+  width: 100%;
+}
+
+/* .mobility-history-item .mid .path-routes-times .single span,
+.mobility-history-item .mid .path-routes-times .single h4 {
+  align-self: center;
+} */
+
+.mobility-history-item .mid .path-routes-times .single span,
+.mobility-history-item .mid .path-routes-times .single div :first-child {
+  color: gray;
+}
+
+.mobility-history-item .mid .path-routes-times .single div {
+  display: flex;
+  gap: 0.6em;
+}
+
+.mobility-history-item .mid .path-routes-times .single div :nth-child(2) {
+  font-weight: bold;
+}
+
+.mobility-history-item .mid .path-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.mobility-history-item .mid .path-btn button {
+  height: 48px;
+  width: 48px;
+  padding: 0;
+  justify-content: center;
+}
+
+.mobility-history-item .mid .path-btn button img {
+  margin: 0;
+}
